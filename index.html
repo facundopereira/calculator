@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <div id="display">
+            <div id="operacion">
+                <p id="numeros"></p>
+                <p id="guion"></p>
+            </div>
+            <div id="resultado"></div>
+        </div>
+        <div id="botones">
+            <button id="onOff" onclick="encendidoApagado()" class="onOff">ON/OFF</button>
+            <button onclick="AC()">AC</button>
+            <button onclick="borrar()" class="DEL operador" value="borrar">&larr;</button>
+            <button onclick="operador('√')" class="operador" value="radio">&radic;</button>
+            <button onclick="operador('^')" class="operador" value="exponenciación">^</button>
+            <button onclick="operador('÷')" class="operador" value="dividir">&divide;</button>
+            <button onclick="operador('×')" class="operador" value="multiplicar">&times;</button>
+            <button onclick="number(7)" class="numero" value="7">7</button>
+            <button onclick="number(8)" class="numero" value="8">8</button>
+            <button onclick="number(9)" class="numero" value="9">9</button>
+            <button onclick="operador('+')" class="operador" value="sumar">&plus;</button>
+            <button onclick="number(4)" class="numero" value="4">4</button>
+            <button onclick="number(5)" class="numero" value="5">5</button>
+            <button onclick="number(6)" class="numero" value="6">6</button>
+            <button onclick="operador('−')" class="operador" value="restar">&minus;</button>
+            <button onclick="number(1)" class="numero" value="1">1</button>
+            <button onclick="number(2)" class="numero" value="2">2</button>
+            <button onclick="number(3)" class="numero" value="3">3</button>
+            <button onclick="calculo()" class="igual operador" value="igual">&equals;</button>
+            <button onclick="number(0)" class="numero" value="0">0</button>
+            <button onclick="number('.')" class="numero" value=".">.</button>
+            <button onclick="operador('%')" class="operador" value="porcentaje">%</button>
+        </div>
+    </div>
+</body>
